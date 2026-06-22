@@ -1,0 +1,79 @@
+body{
+    background-color: lightblue;
+}
+header{
+    background-color:antiquewhite;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    background-color:lightpink;
+    color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+    color: green;
+    font-size: 20px;
+}
+.btn{
+    background-color:bisque;
+    color:darkviolet ;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+#Home-btn:hover,
+#Menu-btn:hover,
+#Gallery-btn:hover,
+#Contact-btn:hover{
+ background-color: lightgreen;
+
+}
+#Home-btn:active,
+#Menu-btn:active,
+#Gallery-btn:active,
+#Contact-btn:active{
+    background-color:brown;
+}
+#Order-btn:active{
+    background-color: chartreuse;
+}
+.card{
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.menu-container{
+    display:flex;
+    justify-content:center;
+    gap: 20px;
+}
+h1{
+    color: green;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.gallery img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px grey;
+}

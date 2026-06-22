@@ -1,0 +1,48 @@
+body{
+    background-color: lightblue;
+     font-family: Arial, sans-serif;
+     color: green;
+}
+header{
+    background-color:antiquewhite;
+    padding: 30px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    padding: 12px 18px;
+    background-color:lightpink;
+    color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+    color: green;
+    font-size: 20px;
+}
+.btn{
+    background-color:bisque;
+    color:darkviolet ;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+#Home-btn:hover,
+#Menu-btn:hover,
+#Gallery-btn:hover,
+#Contact-btn:hover{
+ background-color: lightgreen;
+
+}
+#Home-btn:active,
+#Menu-btn:active,
+#Gallery-btn:active,
+#Contact-btn:active{
+    background-color:brown;
+}
