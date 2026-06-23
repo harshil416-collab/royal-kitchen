@@ -83,3 +83,28 @@ nav a{
 h1{
     color: green;
 }
+ #button{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+/* Mobile Responsive */
+@media screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    nav a{
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .hero{
+        padding: 50px 15px;
+        font-size: 18px;
+    }
+}
