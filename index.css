@@ -30,9 +30,18 @@ nav a{
 }
 .hero{
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     color: green;
     font-size: 20px;
+}
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 22px;
+    margin-bottom: 25px;
 }
 .btn{
     background-color:bisque;
@@ -61,23 +70,35 @@ nav a{
     background-color: chartreuse;
 }
 @media screen and (max-width:768px){
+
     .logo img{
         width: 70px;
         height: 70px;
     }
+
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
     nav a{
         padding: 8px;
         font-size: 14px;
     }
+
     #button{
         gap: 5px;
+        justify-content: center;
     }
+
     .hero{
         padding: 50px 15px;
     }
+
     .hero h1{
         font-size: 30px;
     }
+
     .hero p{
         font-size: 18px;
     }
