@@ -59,13 +59,14 @@ nav a{
     display:flex;
     justify-content:center;
     gap: 20px;
+    flex-wrap:wrap;
 }
 h1{
     color: green;
 }
 .gallery{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -76,4 +77,13 @@ h1{
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 10px grey;
+}
+@media screen and (max-width: 768px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img{
+        height: 200px;
+    }
 }
