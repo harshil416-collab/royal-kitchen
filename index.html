@@ -1,29 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Kitechen</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-        <div class="logo" alt="logo">
-        <img src="https://png.pngtree.com/template/20190618/ourmid/pngtree-initial--letter-rk-logo-design-black-paint-brush-logo-image_215253.jpg">
-        </div>
-    <nav>
-        <div id="button">
-       <a id="Home-btn"href="index.html">Home</a>
-       <a id="Menu-btn"href="Menu.html">Menu</a>
-       <a id="Gallery-btn"href="gallery.html">Gallery</a>
-       <a id="Contact-btn"href="contact.html">Contact</a>
-       </div>
-    </nav>
-    </header>
-    <section class="hero">
-    <h1>Welcome to Royal Kitchen</h1>
-    <p> The Royal Test Of Royal People</p>
+body{
+    background-color: lightblue;
+}
+header{
+    background-color:antiquewhite;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    background-color:lightpink;
+    color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#button{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+    color: green;
+    font-size: 20px;
+}
+.btn{
+    background-color:bisque;
+    color:darkviolet ;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+#Home-btn:hover,
+#Menu-btn:hover,
+#Gallery-btn:hover,
+#Contact-btn:hover{
+    background-color: lightgreen;
+}
 
-    <a id="Order-btn"href="Menu.html" class="btn">Order Now</a>
-</section>
-</body>
-</html>
+#Order-btn:hover{
+    background-color: orange;
+}
+#Home-btn:active,
+#Menu-btn:active,
+#Gallery-btn:active,
+#Contact-btn:active{
+    background-color:brown;
+}
+#Order-btn:active{
+    background-color: chartreuse;
+}
+@media screen and (max-width:768px){
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+    nav a{
+        padding: 8px;
+        font-size: 14px;
+    }
+    #button{
+        gap: 5px;
+    }
+    .hero{
+        padding: 50px 15px;
+    }
+    .hero h1{
+        font-size: 30px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+}
