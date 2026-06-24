@@ -87,12 +87,10 @@ nav a{
         display: flex;
         flex-wrap: nowrap;      /* Keep all buttons in one row */
         justify-content: center;
-        gap: 3px;
-        width: 100%;
+        gap: 50px;
     }
 
     nav a{
-        width:100%
         padding: 6px 8px;
         font-size: 13px;
     }
