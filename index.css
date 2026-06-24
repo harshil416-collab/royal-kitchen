@@ -9,7 +9,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 }
 .logo img{
     border-radius: 50%;
@@ -69,34 +69,40 @@ nav a{
 }
 @media screen and (max-width:768px){
 
-    .logo img{
-        width: 90px;
-        height: 90px;
+    header{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding:10px;
     }
 
-    header{
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
+    .logo img{
+        width:60px;
+        height:60px;
     }
 
     #button{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        gap:5px;
     }
 
     nav a{
-        padding: 10px 15px;
-        font-size: 16px;
+        padding:5px 8px;
+        font-size:14px;
     }
 
     .hero h1{
-        font-size: 32px;
+        font-size:32px;
     }
 
     .hero p{
+        font-size:18px;
+    }
+}{
         font-size: 18px;
     }
 }
