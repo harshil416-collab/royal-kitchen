@@ -1,21 +1,30 @@
 body{
     background-color: lightblue;
 }
+
 header{
-    background-color:antiquewhite;
+    background-color: antiquewhite;
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap:nowrap;
 }
+
 .logo img{
     border-radius: 50%;
     width: 120px;
     height: 120px;
 }
+
+#button{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 nav a{
     text-decoration: none;
     background-color: red;
@@ -26,25 +35,21 @@ nav a{
     font-weight: bold;
     display: inline-block;
 }
-nav{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+nav a:hover{
+    background-color: darkred;
 }
-#button{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+
+nav a:active{
+    background-color: brown;
 }
+
 .hero{
     text-align: center;
     padding: 80px 20px;
     color: green;
-    font-size: 20px;
 }
+
 .hero h1{
     font-size: 50px;
     margin-bottom: 15px;
@@ -54,68 +59,53 @@ nav{
     font-size: 22px;
     margin-bottom: 25px;
 }
+
 .btn{
-    background-color:bisque;
-    color:darkviolet ;
-    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
     text-decoration: none;
-    border-radius: 6px;
-}
-#Home-btn:hover,
-#Menu-btn:hover,
-#Gallery-btn:hover,
-#Contact-btn:hover{
-    background-color: lightgreen;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
 }
 
-#Order-btn:hover{
-    background-color: orange;
+.btn:hover{
+    background-color: darkred;
 }
-#Home-btn:active,
-#Menu-btn:active,
-#Gallery-btn:active,
-#Contact-btn:active{
-    background-color:brown;
-}
-#Order-btn:active{
-    background-color: chartreuse;
-}
+
 @media screen and (max-width:768px){
 
     header{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        padding:10px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .logo img{
-        width:60px;
-        height:60px;
+        width: 80px;
+        height: 80px;
     }
 
     #button{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:flex-end;
-        gap:5px;
+        justify-content: center;
     }
 
     nav a{
-        padding:5px 8px;
-        font-size:14px;
+        font-size: 16px;
+        padding: 8px 12px;
     }
 
     .hero h1{
-        font-size:32px;
+        font-size: 36px;
     }
 
     .hero p{
-        font-size:18px;
-    }
-}{
         font-size: 18px;
+    }
+
+    .btn{
+        font-size: 22px;
+        padding: 12px 24px;
     }
 }
