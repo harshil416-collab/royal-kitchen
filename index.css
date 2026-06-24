@@ -87,12 +87,15 @@ nav a{
         display: flex;
         flex-wrap: nowrap;      /* Keep all buttons in one row */
         justify-content: center;
-        gap: 50px;
+        align-items:center;
+        gap: 4px;
+        width:100%;
     }
 
     nav a{
-        padding: 6px 8px;
-        font-size: 13px;
+        padding: 8px 6px;
+        font-size: 12px;
+        white-space:nowrap;
     }
 
     .hero{
