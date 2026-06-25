@@ -10,7 +10,6 @@ header{
     border-radius: 10px;
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
     align-items: center;
     gap:10px;
 }
